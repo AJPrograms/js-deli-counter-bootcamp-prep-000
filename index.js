@@ -16,7 +16,7 @@ function nowServing(katzDeliLine) {
 function currentLine(katzDeliLine) {
   for (let n = 0; n < katzDeliLine.length; n++) {
     if (katzDeliLine.length === 0) {
-      return `The line is currently empy!`;
+      return `The line is currently empy.`;
     } else if (katzDeliLine.length > 1) {
       return `The line is currently: ${n + 1}. ${katzDeliLine[n]}, `;
     } else {

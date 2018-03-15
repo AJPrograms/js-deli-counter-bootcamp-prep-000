@@ -14,11 +14,14 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  var n = 0;
+  for (let n = 0; n < katzDeliLine.length; n++) {
+      if (katzDeliLine.length === 0) {
+    return `The line is currently empy!`;
+      } else {
+    return `The line is currently: ${n + 1}. ${katzDeliLine[n]}, `
+    
+  }
   if (katzDeliLine.length === 0) {
-    return `The line is currently empty.`;
-  } else if (n < katzDeliLine.length) {
-    n++;
-    return `The line is currently: ${n}. ${katzDeliLine[n]}`;
+    return `The line is currently empy!`;
   }
 }
